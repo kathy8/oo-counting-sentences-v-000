@@ -7,7 +7,7 @@ class String
     true
   else
     false
-  end 
+  end
   end
 
   def question?
@@ -31,7 +31,7 @@ else
     string = self.split('')
     string.each_with_index do |x,y|
       if x == "." || x == "?" || x == "!"
-        array << x inless string[y-1] == x
+        array << x unless string[y-1] == x
   end
   end
   array.length
